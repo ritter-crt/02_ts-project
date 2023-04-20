@@ -1,6 +1,10 @@
 "use strict";
+// Arguments between interface and actual implementation
+// (in NumbersCollection) do not have to match up
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sorter = void 0;
+// instead of specific class, we can now pass in
+// any object that aligns with our Sortable Interface
 class Sorter {
     constructor(collection) {
         this.collection = collection;
