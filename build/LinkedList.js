@@ -1,14 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LinkedList = void 0;
+const Sorter_1 = require("./Sorter");
 class Nodule {
     constructor(data) {
         this.data = data;
         this.next = null;
     }
 }
-class LinkedList {
+class LinkedList extends Sorter_1.Sorter {
     constructor() {
+        super(...arguments);
         this.head = null;
     }
     // return type of void , we can still return (early) without specific value

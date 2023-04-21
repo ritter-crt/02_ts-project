@@ -1,8 +1,10 @@
+import { Sorter } from './Sorter';
+
 class Nodule {
   next: Nodule | null = null;
   constructor(public data: number) {}
 }
-export class LinkedList {
+export class LinkedList extends Sorter {
   head: Nodule | null = null;
   // return type of void , we can still return (early) without specific value
   add(data: number): void {
